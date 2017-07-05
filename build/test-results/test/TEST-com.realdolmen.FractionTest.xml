@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.realdolmen.FractionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-07-05T12:06:47" hostname="vdabs-iMac-70.local" time="0.002">
+  <properties/>
+  <testcase name="shouldSimplify" classname="com.realdolmen.FractionTest" time="0.0"/>
+  <testcase name="shouldToString" classname="com.realdolmen.FractionTest" time="0.0"/>
+  <testcase name="isNotNull" classname="com.realdolmen.FractionTest" time="0.002"/>
+  <testcase name="notSimplified" classname="com.realdolmen.FractionTest" time="0.0"/>
+  <testcase name="isAdded" classname="com.realdolmen.FractionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

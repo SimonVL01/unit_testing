@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Utilities.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">unit-testing</a> &gt; <a href="index.source.html" class="el_package">com.realdolmen</a> &gt; <span class="el_source">Utilities.java</span></div><h1>Utilities.java</h1><pre class="source lang-java linenums">package com.realdolmen;
+
+import static java.lang.Math.*;
+
+<span class="nc" id="L5">public class Utilities {</span>
+    /**
+     * Calculates the &quot;greatest common factor&quot; (GCF) or &quot;greatest common divisor&quot; (GCD) of two integers (Z).
+     * @param a First integer.
+     * @param b Second integer.
+     * @return The greatest common factor of the two specified integers.
+     */
+    public static int greatestCommonFactor(int a, int b) {
+<span class="fc bfc" id="L13" title="All 4 branches covered.">        if(a == 0 || b == 0) {</span>
+<span class="fc" id="L14">            return 1;</span>
+        }
+<span class="fc" id="L16">        a = abs(a);</span>
+<span class="fc" id="L17">        b = abs(b);</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if(a &lt; b) {</span>
+<span class="fc" id="L19">            return greatestCommonFactor(b, a);</span>
+        }
+
+<span class="fc" id="L22">        int delta = a % b;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        if(delta == 0) {</span>
+<span class="fc" id="L24">            return b;</span>
+        } else {
+<span class="fc" id="L26">            return greatestCommonFactor(b, delta);</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.8.201612092310</span></div></body></html>
